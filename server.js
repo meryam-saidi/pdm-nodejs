@@ -7,6 +7,7 @@ import { notFoundError, errorHandler } from './middlewares/error-handler.js';
 import userRoutes from './routes/userRoutes.js';
 import surplusFoodRoutes from './routes/surplusFoodRoutes.js';
 import collectionRoutes from './routes/collectionRoutes.js';
+import authRoutes from './routes/authRoutes.js';
 
 mongoose.set('strictQuery', true);
 
@@ -35,6 +36,7 @@ app.use('/img', express.static('public/images'));
 
 // Routes
 app.use('/user', userRoutes);
+app.use('/auth', authRoutes);
 app.use('/surplusFood', surplusFoodRoutes);
 app.use('/collection', collectionRoutes);
 

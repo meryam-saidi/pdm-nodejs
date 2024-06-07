@@ -16,12 +16,12 @@ const collectionSchema = new Schema(
         ref: 'User', 
         required: true 
     },
-    collectionDate: 
+    startDate: 
     { 
         type: String, 
         //required: true 
     },
-    collectionTime: 
+    endDate: 
     { 
         type: String, 
         //required: true 

@@ -9,7 +9,7 @@ const surplusFoodSchema = new Schema(
         ref: 'User', 
         //required: true 
     },
-    foodType: 
+    foodType: //title
     { 
         type: String, 
         //required: true 

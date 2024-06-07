@@ -18,7 +18,7 @@ const collectionSchema = new Schema(
     },
     collectionDate: 
     { 
-        type: Date, 
+        type: String, 
         //required: true 
     },
     collectionTime: 
@@ -32,7 +32,7 @@ const collectionSchema = new Schema(
         enum: ['pending', 'confirmed', 'canceled', 'completed'], 
         //required: true 
     },
-    comments: 
+    comment: 
     { 
         type: String 
     },  

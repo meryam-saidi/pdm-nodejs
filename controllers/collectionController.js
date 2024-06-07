@@ -40,10 +40,10 @@ export const getCollectionById = async (req, res) => {
 // Mettre à jour une collecte par son ID
   export async function updateCollection(req, res) {
     const { id } = req.params;
-    const { collectionDate, collectionTime, status, comments } = req.body;
+    const { collectionDate, collectionTime, status, comment } = req.body;
   
     try {
-      const updatedCollection = await Collection.findByIdAndUpdate(id, { collectionDate, collectionTime, status, comments }, { new: true });
+      const updatedCollection = await Collection.findByIdAndUpdate(id, { collectionDate, collectionTime, status, comment }, { new: true });
       if (updatedCollection) {
         res.status(200).json(updatedCollection);
       } else {
